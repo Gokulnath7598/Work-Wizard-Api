@@ -1,0 +1,878 @@
+[dotenv] Set [36mDEV_API_DATABASE_NAME[0m, [36mDEV_API_DATABASE_USERNAME[0m, [36mDEV_API_DATABASE_PASSWORD[0m, [36mTEST_API_DATABASE_NAME[0m, [36mTEST_API_DATABASE_USERNAME[0m, [36mTEST_API_DATABASE_PASSWORD[0m, [36mPROD_API_DATABASE_NAME[0m, [36mPROD_API_DATABASE_USERNAME[0m, and [36mPROD_API_DATABASE_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDEV_API_DATABASE_NAME[0m, [36mDEV_API_DATABASE_USERNAME[0m, [36mDEV_API_DATABASE_PASSWORD[0m, [36mTEST_API_DATABASE_NAME[0m, [36mTEST_API_DATABASE_USERNAME[0m, [36mTEST_API_DATABASE_PASSWORD[0m, [36mPROD_API_DATABASE_NAME[0m, [36mPROD_API_DATABASE_USERNAME[0m, and [36mPROD_API_DATABASE_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDEV_API_DATABASE_NAME[0m, [36mDEV_API_DATABASE_USERNAME[0m, [36mDEV_API_DATABASE_PASSWORD[0m, [36mTEST_API_DATABASE_NAME[0m, [36mTEST_API_DATABASE_USERNAME[0m, [36mTEST_API_DATABASE_PASSWORD[0m, [36mPROD_API_DATABASE_NAME[0m, [36mPROD_API_DATABASE_USERNAME[0m, and [36mPROD_API_DATABASE_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDEV_API_DATABASE_NAME[0m, [36mDEV_API_DATABASE_USERNAME[0m, [36mDEV_API_DATABASE_PASSWORD[0m, [36mTEST_API_DATABASE_NAME[0m, [36mTEST_API_DATABASE_USERNAME[0m, [36mTEST_API_DATABASE_PASSWORD[0m, [36mPROD_API_DATABASE_NAME[0m, [36mPROD_API_DATABASE_USERNAME[0m, and [36mPROD_API_DATABASE_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDEV_API_DATABASE_NAME[0m, [36mDEV_API_DATABASE_USERNAME[0m, [36mDEV_API_DATABASE_PASSWORD[0m, [36mTEST_API_DATABASE_NAME[0m, [36mTEST_API_DATABASE_USERNAME[0m, [36mTEST_API_DATABASE_PASSWORD[0m, [36mPROD_API_DATABASE_NAME[0m, [36mPROD_API_DATABASE_USERNAME[0m, and [36mPROD_API_DATABASE_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDEV_API_DATABASE_NAME[0m, [36mDEV_API_DATABASE_USERNAME[0m, [36mDEV_API_DATABASE_PASSWORD[0m, [36mTEST_API_DATABASE_NAME[0m, [36mTEST_API_DATABASE_USERNAME[0m, [36mTEST_API_DATABASE_PASSWORD[0m, [36mPROD_API_DATABASE_NAME[0m, [36mPROD_API_DATABASE_USERNAME[0m, and [36mPROD_API_DATABASE_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDEV_API_DATABASE_NAME[0m, [36mDEV_API_DATABASE_USERNAME[0m, [36mDEV_API_DATABASE_PASSWORD[0m, [36mTEST_API_DATABASE_NAME[0m, [36mTEST_API_DATABASE_USERNAME[0m, [36mTEST_API_DATABASE_PASSWORD[0m, [36mPROD_API_DATABASE_NAME[0m, [36mPROD_API_DATABASE_USERNAME[0m, and [36mPROD_API_DATABASE_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDEV_API_DATABASE_NAME[0m, [36mDEV_API_DATABASE_USERNAME[0m, [36mDEV_API_DATABASE_PASSWORD[0m, [36mTEST_API_DATABASE_NAME[0m, [36mTEST_API_DATABASE_USERNAME[0m, [36mTEST_API_DATABASE_PASSWORD[0m, [36mPROD_API_DATABASE_NAME[0m, [36mPROD_API_DATABASE_USERNAME[0m, and [36mPROD_API_DATABASE_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (56.0ms)[0m  [1m[35mCREATE DATABASE "rails-api-dev" ENCODING = 'unicode'[0m
+  [1m[35m (61.8ms)[0m  [1m[35mCREATE DATABASE "rails-api-test" ENCODING = 'unicode'[0m
+[dotenv] Set [36mDEV_API_DATABASE_NAME[0m, [36mDEV_API_DATABASE_USERNAME[0m, [36mDEV_API_DATABASE_PASSWORD[0m, [36mTEST_API_DATABASE_NAME[0m, [36mTEST_API_DATABASE_USERNAME[0m, [36mTEST_API_DATABASE_PASSWORD[0m, [36mPROD_API_DATABASE_NAME[0m, [36mPROD_API_DATABASE_USERNAME[0m, and [36mPROD_API_DATABASE_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1227252771598542990)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (1.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2024-06-10 11:09:37.103921', '2024-06-10 11:09:37.103927') RETURNING "key"[0m
+Migrating to CreateItems (20220228131817)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "items" ("id" bigserial primary key, "name" character varying, "description" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20220228131817') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(1227252771598542990)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mDEV_API_DATABASE_NAME[0m, [36mDEV_API_DATABASE_USERNAME[0m, [36mDEV_API_DATABASE_PASSWORD[0m, [36mTEST_API_DATABASE_NAME[0m, [36mTEST_API_DATABASE_USERNAME[0m, [36mTEST_API_DATABASE_PASSWORD[0m, [36mPROD_API_DATABASE_NAME[0m, [36mPROD_API_DATABASE_USERNAME[0m, and [36mPROD_API_DATABASE_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mDEV_API_DATABASE_NAME[0m, [36mDEV_API_DATABASE_USERNAME[0m, [36mDEV_API_DATABASE_PASSWORD[0m, [36mTEST_API_DATABASE_NAME[0m, [36mTEST_API_DATABASE_USERNAME[0m, [36mTEST_API_DATABASE_PASSWORD[0m, [36mPROD_API_DATABASE_NAME[0m, [36mPROD_API_DATABASE_USERNAME[0m, and [36mPROD_API_DATABASE_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDEV_API_DATABASE_NAME[0m, [36mDEV_API_DATABASE_USERNAME[0m, [36mDEV_API_DATABASE_PASSWORD[0m, [36mTEST_API_DATABASE_NAME[0m, [36mTEST_API_DATABASE_USERNAME[0m, [36mTEST_API_DATABASE_PASSWORD[0m, [36mPROD_API_DATABASE_NAME[0m, [36mPROD_API_DATABASE_USERNAME[0m, and [36mPROD_API_DATABASE_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDEV_API_DATABASE_NAME[0m, [36mDEV_API_DATABASE_USERNAME[0m, [36mDEV_API_DATABASE_PASSWORD[0m, [36mTEST_API_DATABASE_NAME[0m, [36mTEST_API_DATABASE_USERNAME[0m, [36mTEST_API_DATABASE_PASSWORD[0m, [36mPROD_API_DATABASE_NAME[0m, [36mPROD_API_DATABASE_USERNAME[0m, and [36mPROD_API_DATABASE_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (1224.9ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  [1m[35m (491.3ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  [1m[35m (109.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (14.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateItems (20220228131817)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (33.9ms)[0m  [1m[35mCREATE TABLE "items" ("id" bigserial primary key, "name" character varying, "description" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220228131817"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProjects (20240617142502)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE "projects" ("id" bigserial primary key, "project_name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240617142502"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUsers (20240617142741)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240617142741"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2024-06-17 14:33:42.300406"], ["updated_at", "2024-06-17 14:33:42.300406"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[35m (12.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (7.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "rasika"], ["last_name", "r"], ["email", "rasika.ravichandran@rootquotient.com"], ["created_at", "2024-06-17 17:45:31.731157"], ["updated_at", "2024-06-17 17:45:31.731157"]]
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (10.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/favicon.ico" for 127.0.0.1 at 2024-06-17 23:45:23 +0530
+  [1m[35m (10.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2024-06-18 08:31:51 +0530
+  [1m[35m (12.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/user/users/1" for 127.0.0.1 at 2024-06-18 08:41:31 +0530
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant Api::V1::User::UsersController
+Did you mean?  Api::V1::User::UserController):
+  
+Started GET "/api/v1/user/users/1" for 127.0.0.1 at 2024-06-18 08:42:00 +0530
+  
+ActionController::RoutingError (uninitialized constant Api::V1::User::UsersController
+Did you mean?  Api::V1::User::UserController):
+  
+Started GET "/api/v1/user/users/1" for 127.0.0.1 at 2024-06-18 08:42:09 +0530
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+NoMethodError (undefined method `before_action' for Api::V1::UsersController:Class):
+  
+app/controllers/api/v1/user/users_controller.rb:3:in `<class:UsersController>'
+app/controllers/api/v1/user/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/user/users/1" for 127.0.0.1 at 2024-06-18 08:45:00 +0530
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+NoMethodError (undefined method `protect_from_forgery' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/api/v1/user/users_controller.rb:1:in `<main>'
+Started GET "/api/v1/user/users/1" for 127.0.0.1 at 2024-06-18 08:45:10 +0530
+  
+Zeitwerk::NameError (expected file /Users/rasikar/Documents/work-wizard-apis/app/controllers/api/v1/user/users_controller.rb to define constant Api::V1::User::UsersController, but didn't):
+  
+zeitwerk (2.6.16) lib/zeitwerk/loader/callbacks.rb:32:in `on_file_autoloaded'
+zeitwerk (2.6.16) lib/zeitwerk/kernel.rb:27:in `require'
+activesupport (6.1.7.8) lib/active_support/inflector/methods.rb:287:in `const_get'
+activesupport (6.1.7.8) lib/active_support/inflector/methods.rb:287:in `block in constantize'
+activesupport (6.1.7.8) lib/active_support/inflector/methods.rb:283:in `each'
+activesupport (6.1.7.8) lib/active_support/inflector/methods.rb:283:in `inject'
+activesupport (6.1.7.8) lib/active_support/inflector/methods.rb:283:in `constantize'
+activesupport (6.1.7.8) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.1.7.8) lib/action_dispatch/http/request.rb:93:in `controller_class_for'
+actionpack (6.1.7.8) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (6.1.7.8) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (6.1.7.8) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (6.1.7.8) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (6.1.7.8) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (6.1.7.8) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7.8) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7.8) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.9) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.9) lib/rack/etag.rb:27:in `call'
+rack (2.2.9) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.9) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.9) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.9) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (6.1.7.8) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.8) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.8) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.8) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.8) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.8) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.8) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.8) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+railties (6.1.7.8) lib/rails/engine.rb:539:in `call'
+puma (5.6.8) lib/puma/configuration.rb:252:in `call'
+puma (5.6.8) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.8) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.8) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.8) lib/puma/server.rb:443:in `process_client'
+puma (5.6.8) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/api/v1/user/users/1" for 127.0.0.1 at 2024-06-18 08:46:09 +0530
+Processing by Api::V1::User::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (9.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/user/users_controller.rb:28:in `set_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (7.98ms)
+Completed 500 Internal Server Error in 134ms (ActiveRecord: 40.9ms | Allocations: 9708)
+
+
+  
+NameError (undefined local variable or method `first_name' for #<UserSerializer:0x000000012f941c88>):
+  
+app/serializers/user_serializer.rb:5:in `name'
+app/controllers/api/v1/user/users_controller.rb:6:in `show'
+Started GET "/api/v1/user/users/1" for 127.0.0.1 at 2024-06-18 08:46:31 +0530
+Processing by Api::V1::User::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/user/users_controller.rb:28:in `set_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.82ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 5.9ms | Allocations: 5170)
+
+
+  
+NoMethodError (undefined method `first_name' for #<UserSerializer:0x000000012fa987a8>):
+  
+app/serializers/user_serializer.rb:5:in `name'
+app/controllers/api/v1/user/users_controller.rb:6:in `show'
+Started GET "/api/v1/user/users/1" for 127.0.0.1 at 2024-06-18 08:46:57 +0530
+Processing by Api::V1::User::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/user/users_controller.rb:28:in `set_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.22ms)
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 6.0ms | Allocations: 4551)
+
+
+Started GET "/api/v1/user/users/1" for 127.0.0.1 at 2024-06-18 08:47:15 +0530
+Processing by Api::V1::User::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/user/users_controller.rb:28:in `set_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.89ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 7.7ms | Allocations: 5128)
+
+
+  
+NoMethodError (undefined method `first_name' for #<UserSerializer:0x0000000106972f50>):
+  
+app/serializers/user_serializer.rb:5:in `name'
+app/controllers/api/v1/user/users_controller.rb:6:in `show'
+Started GET "/api/v1/user/users/1" for 127.0.0.1 at 2024-06-18 08:47:58 +0530
+Processing by Api::V1::User::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/user/users_controller.rb:28:in `set_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.24ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 5.8ms | Allocations: 4568)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/serializers/user_serializer.rb:5:in `name'
+app/controllers/api/v1/user/users_controller.rb:6:in `show'
+Started GET "/api/v1/user/users/1" for 127.0.0.1 at 2024-06-18 08:48:51 +0530
+Processing by Api::V1::User::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/user/users_controller.rb:28:in `set_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.38ms)
+Completed 200 OK in 24ms (Views: 1.7ms | ActiveRecord: 8.1ms | Allocations: 4546)
+
+
+Started GET "/api/v1/user/users/1" for 127.0.0.1 at 2024-06-18 08:49:18 +0530
+Processing by Api::V1::User::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/user/users_controller.rb:28:in `set_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (0.26ms)
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 5.4ms | Allocations: 4503)
+
+
+  [1m[35m (8.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (10.4ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Akamai"], ["created_at", "2024-06-18 03:29:37.537603"], ["updated_at", "2024-06-18 03:29:37.537603"]]
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (1.1ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Aligner4D"], ["created_at", "2024-06-18 03:29:37.558653"], ["updated_at", "2024-06-18 03:29:37.558653"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Aranpani"], ["created_at", "2024-06-18 03:29:37.564050"], ["updated_at", "2024-06-18 03:29:37.564050"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Azeera"], ["created_at", "2024-06-18 03:29:37.568531"], ["updated_at", "2024-06-18 03:29:37.568531"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Baco"], ["created_at", "2024-06-18 03:29:37.572137"], ["updated_at", "2024-06-18 03:29:37.572137"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (1.1ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "BDD"], ["created_at", "2024-06-18 03:29:37.575443"], ["updated_at", "2024-06-18 03:29:37.575443"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Belirium"], ["created_at", "2024-06-18 03:29:37.579575"], ["updated_at", "2024-06-18 03:29:37.579575"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Bigbox"], ["created_at", "2024-06-18 03:29:37.582901"], ["updated_at", "2024-06-18 03:29:37.582901"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.7ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Carbonhound"], ["created_at", "2024-06-18 03:29:37.586204"], ["updated_at", "2024-06-18 03:29:37.586204"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "CED CO-OP"], ["created_at", "2024-06-18 03:29:37.589880"], ["updated_at", "2024-06-18 03:29:37.589880"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Cero"], ["created_at", "2024-06-18 03:29:37.593125"], ["updated_at", "2024-06-18 03:29:37.593125"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "COE"], ["created_at", "2024-06-18 03:29:37.596336"], ["updated_at", "2024-06-18 03:29:37.596336"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (1.2ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Finobuddy"], ["created_at", "2024-06-18 03:29:37.599593"], ["updated_at", "2024-06-18 03:29:37.599593"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "HedgeLegal"], ["created_at", "2024-06-18 03:29:37.603728"], ["updated_at", "2024-06-18 03:29:37.603728"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Inspirata"], ["created_at", "2024-06-18 03:29:37.607060"], ["updated_at", "2024-06-18 03:29:37.607060"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "TRAF"], ["created_at", "2024-06-18 03:29:37.610310"], ["updated_at", "2024-06-18 03:29:37.610310"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Velicham Finance"], ["created_at", "2024-06-18 03:29:37.613549"], ["updated_at", "2024-06-18 03:29:37.613549"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (25.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started GET "/api/v1/user/projects/1" for 127.0.0.1 at 2024-06-18 09:13:32 +0530
+  
+NoMethodError (undefined method `action_encoding_template' for Api::V1::User::ProjectsController:Class):
+  
+actionpack (6.1.7.8) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (6.1.7.8) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (6.1.7.8) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (6.1.7.8) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (6.1.7.8) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (6.1.7.8) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.7.8) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7.8) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.9) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.9) lib/rack/etag.rb:27:in `call'
+rack (2.2.9) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.9) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.9) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.9) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (6.1.7.8) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.8) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.8) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.8) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.8) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.8) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.8) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.8) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.8) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+railties (6.1.7.8) lib/rails/engine.rb:539:in `call'
+puma (5.6.8) lib/puma/configuration.rb:252:in `call'
+puma (5.6.8) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.8) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.8) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.8) lib/puma/server.rb:443:in `process_client'
+puma (5.6.8) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/api/v1/user/projects/1" for 127.0.0.1 at 2024-06-18 09:13:56 +0530
+Processing by Api::V1::User::ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 5ms (Allocations: 1669)
+
+
+  
+NameError (uninitialized constant Api::V1::User::ProjectsController::ProjectSerializer):
+  
+app/controllers/api/v1/user/projects_controller.rb:12:in `show'
+Started GET "/api/v1/user/projects" for 127.0.0.1 at 2024-06-18 09:13:58 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/user/projects"):
+  
+Started GET "/api/v1/user/projects" for 127.0.0.1 at 2024-06-18 09:14:38 +0530
+  [1m[35m (9.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::User::ProjectsController#index as HTML
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms | Allocations: 4766)
+
+
+  
+NameError (uninitialized constant Api::V1::User::ProjectsController::Projects):
+  
+app/controllers/api/v1/user/projects_controller.rb:6:in `index'
+Started GET "/api/v1/user/projects" for 127.0.0.1 at 2024-06-18 09:16:08 +0530
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::User::ProjectsController#index as HTML
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms | Allocations: 4790)
+
+
+  
+NameError (uninitialized constant Api::V1::User::ProjectsController::Projects):
+  
+app/controllers/api/v1/user/projects_controller.rb:6:in `index'
+Started GET "/api/v1/user/projects" for 127.0.0.1 at 2024-06-18 09:16:37 +0530
+Processing by Api::V1::User::ProjectsController#index as HTML
+  [1m[36mProject Load (8.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/user/projects_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (7.2ms)
+Completed 200 OK in 100ms (Views: 40.2ms | ActiveRecord: 31.6ms | Allocations: 6985)
+
+
+Started GET "/api/v1/user/users/1" for 127.0.0.1 at 2024-06-18 19:07:05 +0530
+Processing by Api::V1::User::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/user/users_controller.rb:28:in `set_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.72ms)
+Completed 200 OK in 700ms (Views: 3.1ms | ActiveRecord: 413.3ms | Allocations: 8890)
+
+
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[35m (19.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColumnUserAuthIdToUser (20240618192751)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.4ms)[0m  [1m[35mALTER TABLE "users" ADD "user_auth_id" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240618192751"]]
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (7.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (38.9ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (9.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[35m (9.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (8.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[35m (7.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2024-06-19 17:24:07 +0530
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/gokulnathgopu/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/gokulnathgopu/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 50.4ms | Allocations: 471)
+Completed 200 OK in 93ms (Views: 61.8ms | ActiveRecord: 0.0ms | Allocations: 3998)
+
+
+Started GET "/api/v1/project_management/all_projects" for ::1 at 2024-06-19 17:28:02 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/project_management/all_projects"):
+  
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateDailyTasks (20240619075452)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (101.4ms)[0m  [1m[35mCREATE TABLE "daily_tasks" ("id" bigserial primary key, "user_id" integer, "project_id" integer, "task_desc" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240619075452"]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUserProjects (20240619101319)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.2ms)[0m  [1m[35mCREATE TABLE "user_projects" ("id" bigserial primary key, "user_id" bigint NOT NULL, "project_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_d19c0da646"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_f58e9073ce"
+FOREIGN KEY ("project_id")
+  REFERENCES "projects" ("id")
+)[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE INDEX "index_user_projects_on_user_id" ON "user_projects" ("user_id")[0m
+  [1m[35m (12.8ms)[0m  [1m[35mCREATE INDEX "index_user_projects_on_project_id" ON "user_projects" ("project_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240619101319"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddStartTimeAndEndTimeToUser (20240619101401)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "start_time" time[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "end_time" time[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240619101401"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api/v1/project_management/all_projects" for ::1 at 2024-06-19 17:30:08 +0530
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/project_management/all_projects"):
+  
+Started GET "/api/v1/project_management/projects" for ::1 at 2024-06-19 17:31:36 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/project_management/projects"):
+  
+Started GET "/api/v1/projects" for ::1 at 2024-06-19 17:31:40 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/projects"):
+  
+Started GET "/api/v1/project" for ::1 at 2024-06-19 17:31:53 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/project"):
+  
+Started GET "/api/v1/projects" for ::1 at 2024-06-19 17:32:54 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/projects"):
+  
+Started GET "/api/v1/user" for ::1 at 2024-06-19 17:33:36 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/user"):
+  
+Started GET "/api/v1/user/users" for ::1 at 2024-06-19 17:33:42 +0530
+Processing by Api::V1::User::UsersController#index as */*
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 151)
+
+
+Started GET "/api/v1/project/projects" for ::1 at 2024-06-19 17:33:51 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/project/projects"):
+  
+Started GET "/api/v1/projects/projects" for ::1 at 2024-06-19 17:34:01 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/projects/projects"):
+  
+Started GET "/api/v1/projects" for ::1 at 2024-06-19 17:34:04 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/projects"):
+  
+Started GET "/api/v1/user/daily_task" for ::1 at 2024-06-19 17:36:12 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/user/daily_task"):
+  
+Started GET "/api/v1/user/daily_tasks" for ::1 at 2024-06-19 17:36:22 +0530
+Processing by Api::V1::User::DailyTasksController#index as */*
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.28ms)
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 200ms (Views: 5.6ms | Allocations: 4236)
+
+
+Started GET "/api/v1/admin/projects" for ::1 at 2024-06-19 17:36:46 +0530
+Processing by Api::V1::Admin::ProjectsController#index as */*
+  [1m[36mProject Load (9.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/admin/projects_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (4.49ms)
+Completed 200 OK in 166ms (Views: 129.5ms | ActiveRecord: 57.7ms | Allocations: 10256)
+
+
+Started GET "/api/v1/admin/tasks" for ::1 at 2024-06-19 17:36:57 +0530
+Processing by Api::V1::Admin::TasksController#index as */*
+  [1m[36mTask Load (5.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."created_at" BETWEEN $1 AND $2[0m  [["created_at", "2024-06-01 00:00:00"], ["created_at", "2024-06-30 23:59:59.999999"]]
+  ↳ app/controllers/api/v1/admin/tasks_controller.rb:20:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.26ms)
+Completed 200 OK in 72ms (Views: 3.7ms | ActiveRecord: 39.0ms | Allocations: 3988)
+
+
+Started GET "/api/v1/admin/users" for ::1 at 2024-06-19 17:37:07 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/admin/users"):
+  
+Started GET "/api/v1/admin/user" for ::1 at 2024-06-19 17:37:17 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/admin/user"):
+  
+Started GET "/api/v1/admin/projects" for ::1 at 2024-06-19 17:37:25 +0530
+Processing by Api::V1::Admin::ProjectsController#index as */*
+  [1m[36mProject Load (1.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/admin/projects_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.63ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 1.3ms | Allocations: 818)
+
+
+Started GET "/api/v1/admin/projects" for ::1 at 2024-06-19 17:40:10 +0530
+Processing by Api::V1::Admin::ProjectsController#index as */*
+  [1m[36mProject Load (6.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/admin/projects_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.48ms)
+Completed 200 OK in 24ms (Views: 16.8ms | ActiveRecord: 6.4ms | Allocations: 800)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-19 18:00:31 +0530
+  [1m[35m (9.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/gokulnathgopu/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/gokulnathgopu/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 30.2ms | Allocations: 365)
+Completed 200 OK in 77ms (Views: 47.6ms | ActiveRecord: 0.0ms | Allocations: 2830)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2024-06-19 18:00:32 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 127.0.0.1 at 2024-06-19 18:07:20 +0530
+  [1m[35m (6.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/gokulnathgopu/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/gokulnathgopu/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 38.0ms | Allocations: 363)
+Completed 200 OK in 71ms (Views: 48.1ms | ActiveRecord: 0.0ms | Allocations: 2851)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2024-06-19 18:07:21 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 10.1.38.93 at 2024-06-19 18:11:22 +0530
+  [1m[35m (7.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/gokulnathgopu/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/gokulnathgopu/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 25.2ms | Allocations: 363)
+Completed 200 OK in 71ms (Views: 38.6ms | ActiveRecord: 0.0ms | Allocations: 2851)
+
+
+Started GET "/favicon.ico" for 10.1.38.93 at 2024-06-19 18:11:23 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/admin/projects" for 10.1.38.84 at 2024-06-19 18:14:51 +0530
+Processing by Api::V1::Admin::ProjectsController#index as */*
+  [1m[36mProject Load (19.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/admin/projects_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (15.83ms)
+Completed 200 OK in 201ms (Views: 117.1ms | ActiveRecord: 19.5ms | Allocations: 5190)
+
+
+Started OPTIONS "/api/v1/user_management/auth" for 10.1.38.84 at 2024-06-19 18:15:39 +0530
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/user_management/auth"):
+  
+Started POST "/api/v1/user_management/auth" for 10.1.38.84 at 2024-06-19 18:16:11 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/user_management/auth"):
+  
+Started POST "/api/v1/admin/projects" for 10.1.38.84 at 2024-06-19 18:19:45 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/admin/projects"):
+  
+Started GET "/api/v1/admin/projects" for 10.1.38.84 at 2024-06-19 18:19:48 +0530
+Processing by Api::V1::Admin::ProjectsController#index as */*
+  [1m[36mProject Load (6.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/admin/projects_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.38ms)
+Completed 200 OK in 22ms (Views: 14.8ms | ActiveRecord: 6.5ms | Allocations: 813)
+
+
+Started GET "/api/v1/admin/projects" for 10.1.38.84 at 2024-06-19 18:21:20 +0530
+Processing by Api::V1::Admin::ProjectsController#index as */*
+  [1m[36mProject Load (9.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/admin/projects_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.95ms)
+Completed 200 OK in 51ms (Views: 41.3ms | ActiveRecord: 9.1ms | Allocations: 801)
+
+
+Started GET "/api/v1/admin/projects" for 127.0.0.1 at 2024-06-19 18:23:29 +0530
+Processing by Api::V1::Admin::ProjectsController#index as */*
+  [1m[36mProject Load (3.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/admin/projects_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.78ms)
+Completed 200 OK in 41ms (Views: 34.3ms | ActiveRecord: 3.8ms | Allocations: 800)
+
+
+Started GET "/" for 10.1.38.93 at 2024-06-19 18:27:13 +0530
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/gokulnathgopu/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/gokulnathgopu/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 52.1ms | Allocations: 363)
+Completed 200 OK in 92ms (Views: 62.7ms | ActiveRecord: 0.0ms | Allocations: 2854)
+
+
+Started GET "/favicon.ico" for 10.1.38.93 at 2024-06-19 18:27:14 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 8e40-183-82-33-7.ngrok-free.app
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: 8e40-183-82-33-7.ngrok-free.app
+Started GET "/" for 183.82.33.7 at 2024-06-19 18:37:29 +0530
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/gokulnathgopu/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/gokulnathgopu/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 15.9ms | Allocations: 364)
+Completed 200 OK in 34ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 2852)
+
+
+Started GET "/favicon.ico" for 183.82.33.7 at 2024-06-19 18:37:31 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/admin/projects" for 183.82.33.7 at 2024-06-19 18:39:38 +0530
+Processing by Api::V1::Admin::ProjectsController#index as */*
+  [1m[36mProject Load (20.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/admin/projects_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (7.22ms)
+Completed 200 OK in 155ms (Views: 60.9ms | ActiveRecord: 20.2ms | Allocations: 5194)
+
+
+Started GET "/api/v1/admin/projects" for 183.82.33.7 at 2024-06-19 18:40:08 +0530
+Processing by Api::V1::Admin::ProjectsController#index as HTML
+  [1m[36mProject Load (8.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/admin/projects_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.84ms)
+Completed 200 OK in 48ms (Views: 38.8ms | ActiveRecord: 8.0ms | Allocations: 797)
+
+
+Started OPTIONS "/api/v1/admin/projects" for 183.82.33.7 at 2024-06-19 18:44:36 +0530
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/admin/projects"):
+  
+Started OPTIONS "/api/v1/admin/tasks" for 183.82.33.7 at 2024-06-19 18:47:08 +0530
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/admin/tasks"):
+  
+Started OPTIONS "/api/v1/admin/tasks" for 183.82.33.7 at 2024-06-19 18:47:58 +0530
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/admin/tasks"):
+  
+Started OPTIONS "/api/v1/admin/tasks" for 183.82.33.7 at 2024-06-19 18:49:13 +0530
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/admin/tasks"):
+  
+Started GET "/api/v1/admin/tasks" for 183.82.33.7 at 2024-06-19 18:50:27 +0530
+Processing by Api::V1::Admin::TasksController#index as */*
+  [1m[36mTask Load (7.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."created_at" BETWEEN $1 AND $2[0m  [["created_at", "2024-06-01 00:00:00"], ["created_at", "2024-06-30 23:59:59.999999"]]
+  ↳ app/controllers/api/v1/admin/tasks_controller.rb:20:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.61ms)
+Completed 200 OK in 260ms (Views: 6.6ms | ActiveRecord: 139.6ms | Allocations: 7783)
+
+
+Started OPTIONS "/api/v1/admin/tasks" for 183.82.33.7 at 2024-06-19 18:53:56 +0530
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/admin/tasks"):
+  
+Started OPTIONS "/api/v1/admin/tasks" for 183.82.33.7 at 2024-06-19 18:55:20 +0530
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/admin/tasks"):
+  
+Started OPTIONS "/api/v1/admin/tasks" for 183.82.33.7 at 2024-06-19 18:56:52 +0530
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/admin/tasks"):
+  
+Started OPTIONS "/api/v1/admin/tasks" for 183.82.33.7 at 2024-06-19 18:59:55 +0530
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/admin/tasks"):
+  
+Started OPTIONS "/api/v1/admin/tasks" for 183.82.33.7 at 2024-06-19 19:00:22 +0530
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/admin/tasks"):
+  
+Started OPTIONS "/api/v1/admin/tasks" for 183.82.33.7 at 2024-06-19 19:06:22 +0530
+  [1m[35m (8.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/admin/tasks"):
+  
+Started OPTIONS "/api/v1/admin/tasks" for 183.82.33.7 at 2024-06-19 19:13:23 +0530
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/admin/tasks"):
+  
+Started OPTIONS "/api/v1/admin/tasks" for 183.82.33.7 at 2024-06-19 19:14:53 +0530
+  [1m[35m (9.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/admin/tasks"):
+  
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (8.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (24.3ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Akamai"], ["created_at", "2024-06-19 13:51:51.041695"], ["updated_at", "2024-06-19 13:51:51.041695"]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Aligner4D"], ["created_at", "2024-06-19 13:51:51.074140"], ["updated_at", "2024-06-19 13:51:51.074140"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.4ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Aranpani"], ["created_at", "2024-06-19 13:51:51.078064"], ["updated_at", "2024-06-19 13:51:51.078064"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.4ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Azeera"], ["created_at", "2024-06-19 13:51:51.081652"], ["updated_at", "2024-06-19 13:51:51.081652"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Baco"], ["created_at", "2024-06-19 13:51:51.100632"], ["updated_at", "2024-06-19 13:51:51.100632"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "BDD"], ["created_at", "2024-06-19 13:51:51.103643"], ["updated_at", "2024-06-19 13:51:51.103643"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Belirium"], ["created_at", "2024-06-19 13:51:51.106932"], ["updated_at", "2024-06-19 13:51:51.106932"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Bigbox"], ["created_at", "2024-06-19 13:51:51.109821"], ["updated_at", "2024-06-19 13:51:51.109821"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Carbonhound"], ["created_at", "2024-06-19 13:51:51.112444"], ["updated_at", "2024-06-19 13:51:51.112444"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "CED CO-OP"], ["created_at", "2024-06-19 13:51:51.115529"], ["updated_at", "2024-06-19 13:51:51.115529"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Cero"], ["created_at", "2024-06-19 13:51:51.118175"], ["updated_at", "2024-06-19 13:51:51.118175"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "COE"], ["created_at", "2024-06-19 13:51:51.120725"], ["updated_at", "2024-06-19 13:51:51.120725"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Finobuddy"], ["created_at", "2024-06-19 13:51:51.123129"], ["updated_at", "2024-06-19 13:51:51.123129"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.8ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "HedgeLegal"], ["created_at", "2024-06-19 13:51:51.125699"], ["updated_at", "2024-06-19 13:51:51.125699"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Inspirata"], ["created_at", "2024-06-19 13:51:51.128645"], ["updated_at", "2024-06-19 13:51:51.128645"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "TRAF"], ["created_at", "2024-06-19 13:51:51.131227"], ["updated_at", "2024-06-19 13:51:51.131227"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.2ms)[0m  [1m[32mINSERT INTO "projects" ("project_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["project_name", "Velicham Finance"], ["created_at", "2024-06-19 13:51:51.133535"], ["updated_at", "2024-06-19 13:51:51.133535"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 183.82.33.7 at 2024-06-19 19:22:22 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/gokulnathgopu/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/gokulnathgopu/.rvm/gems/ruby-3.0.0/gems/railties-6.1.7.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 15.8ms | Allocations: 185)
+Completed 200 OK in 53ms (Views: 16.6ms | Allocations: 1909)
+
+
+Started GET "/favicon.ico" for 183.82.33.7 at 2024-06-19 19:22:23 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/admin/projects" for 183.82.33.7 at 2024-06-19 19:22:34 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/admin/projects"):
+  
+Started GET "/api/v1/admin/projects" for 183.82.33.7 at 2024-06-19 19:22:42 +0530
+Processing by Api::V1::Admin::ProjectsController#index as HTML
+  [1m[36mProject Load (3.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/admin/projects_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (13.43ms)
+Completed 200 OK in 270ms (Views: 224.5ms | ActiveRecord: 93.6ms | Allocations: 13183)
+
+
+Started OPTIONS "/api/v1/admin/projects" for 183.82.33.7 at 2024-06-19 19:23:08 +0530
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/admin/projects"):
+  
+Started OPTIONS "/api/v1/admin/auth" for 183.82.33.7 at 2024-06-19 19:25:36 +0530
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/admin/auth"):
+  
+Started GET "/api/v1/user/users" for 183.82.33.7 at 2024-06-19 19:28:04 +0530
+Processing by Api::V1::User::UsersController#index as */*
+Completed 204 No Content in 1ms (Allocations: 105)
+
+
+Started OPTIONS "/api/v1/user/users" for 183.82.33.7 at 2024-06-19 19:28:22 +0530
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/user/users"):
+  
+Started OPTIONS "/api/v1/user/users" for 183.82.33.7 at 2024-06-19 19:29:06 +0530
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/user/users"):
+  
+Started GET "/api/v1/user/users" for 183.82.33.7 at 2024-06-19 19:29:52 +0530
+Processing by Api::V1::User::UsersController#index as */*
+Completed 204 No Content in 1ms (Allocations: 54)
+
+
+Started GET "/api/v1/user/users" for 183.82.33.7 at 2024-06-19 19:32:52 +0530
+Processing by Api::V1::User::UsersController#index as */*
+Completed 204 No Content in 2ms (Allocations: 54)
+
+
+Started GET "/api/v1/user/users" for 183.82.33.7 at 2024-06-19 19:34:59 +0530
+Processing by Api::V1::User::UsersController#index as */*
+Completed 204 No Content in 1ms (Allocations: 54)
+
+
+Started OPTIONS "/api/v1/user/users" for 183.82.33.7 at 2024-06-19 19:36:23 +0530
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/user/users"):
+  
+Started OPTIONS "/api/v1/user/users" for 183.82.33.7 at 2024-06-19 19:40:35 +0530
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/user/users"):
+  
+Started OPTIONS "/api/v1/user/users" for 183.82.33.7 at 2024-06-19 19:53:54 +0530
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/user/users"):
+  
+Started OPTIONS "/api/v1/user/users" for 183.82.33.7 at 2024-06-19 20:00:31 +0530
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/api/v1/user/users"):
+  
